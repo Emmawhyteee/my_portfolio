@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav1 ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 40px;
+  font-weight: bold;
+}
+.btn1 a:hover {
+  text-decoration: none;
+  color: white;
+}
+.nav1 ul li :hover {
+  color: #021131;
+  text-shadow: 2px 2px 2px rgb(83, 81, 81);
+}
+
+.nav1 ul li a {
+  text-decoration: none;
+  color: #021131;
+}
+
+[src="logo.png"] {
+  width: 18%;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.btn1 {
+  margin: 25px;
+  padding: 10px;
+  border-radius: 50px;
+  color: #021131;
+  font-weight: bold;
+}
+.btn1:hover {
+  background-color: #021131;
+  color: white;
+  font-weight: bold;
+}
+
+.banner1 {
+  height: 550px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(78, 160, 180, 0.3),
+      rgba(78, 160, 180, 0.2)
+    ),
+    url(about_us.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  background-color: rgb(149, 149, 247);
+  color: whitesmoke;
+  box-sizing: border-box;
+  text-align: start;
+  padding: 200px;
+  font-size: larger;
+}
+
+.banner2 {
+  background-color: #b0f2b4;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box1 {
+  color: rgb(85, 83, 83);
+  padding: 20px;
+
+  width: 500px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.box2 {
+  color: rgb(85, 83, 83);
+  padding: 30px;
+  box-sizing: border-box;
+  width: 500px;
+  height: 400px;
+}
+
+.team {
+  height: 30px;
+
+  background-color: #444054;
+  color: white;
+  padding: 10px;
+}
+.middle {
+  text-align: center;
+}
+.circle {
+  background-color: bisque;
+}
+
+.rounded {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 20px;
+}
+
+.rounded2 {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.round {
+  border: 1px solid gray;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  padding: 30px;
+}
+.team1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(Team_lead.jpg);
+  background-size: cover;
+}
+
+.team2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(product_manager.jpg);
+  background-size: cover;
+}
+
+.team3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(cybersecurity.jpg);
+  background-size: cover;
+}
+
+.team4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(customer_care.jpg);
+  background-size: cover;
+}
+
+.tteam {
+  color: white;
+  text-align: center;
+  font-size: large;
+  margin-top: 150px;
+}
+.footer {
+  /* box-shadow: 5px 0px 4px rgb(168, 163, 163); */
+  height: 50px;
+  box-shadow: 5px 0px 5px rgb(85, 83, 83);
+  min-height: 80px;
+  margin-top: px;
+}
+
+.footer:hover {
+  background-color: #021131;
+  color: white;
+}
+.footer1:hover {
+  background-color: #021131;
+  color: white;
+}
+
+.footer1 {
+  margin-left: 550px;
+
+  padding: 20px;
+}
+.footer1 a {
+  color: rgb(85, 83, 83);
+  text-decoration: none;
+  padding: 20px 20px;
+}
+[href="#Home"] {
+  text-decoration: none;
+  color: rgb(85, 83, 83);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .banner1 {
+    width: 100%;
+  }
+  .banner1 h1 {
+    font-size: 20px;
+    width: 350px;
+    margin-left: -150px;
+  }
+  .banner2 .box1 .box2 {
+    flex-wrap: wrap;
+  }
+  .banner2 {
+    background-color: white;
+  }
+  .round {
+    border-radius: 70%;
+  }
+  .team {
+    margin-top: 617px;
+  }
+
+  .box1 h2 p {
+    font-size: 14px;
+    min-height: 200px;
+  }
+  .footer h1 {
+    text-align: center;
+    font-size: 14px;
+    margin-left: -20px;
+    padding-top: -14px;
+  }
+}
